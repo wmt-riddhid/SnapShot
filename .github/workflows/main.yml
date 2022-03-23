@@ -54,6 +54,12 @@ jobs:
         name: production-file
         path: ./build
 
+    # - name: deploy to gh-pages
+    #   uses: peaceiris/actions-gh-pages@v3
+    #   with: 
+    #     github_token: ${{ secrets.GITHUB_TOKEN }}
+    #     publish_dir: ./build
+
     - name: Deploy to Netlify
       uses: jsmrcaga/action-netlify-deploy@v1.1.0
       with:
@@ -63,8 +69,3 @@ jobs:
         install_command: "echo hello"
         NETLIFY_DEPLOY_TO_PROD: true
 
-    - name: deploy to gh-pages
-      uses: peaceiris/actions-gh-pages@v3
-      with: 
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./build

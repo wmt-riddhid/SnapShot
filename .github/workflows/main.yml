@@ -31,8 +31,8 @@ jobs:
     - name: build project
       run: npm run build
 
-    - name: run tests
-      run: npm run test
+  #  - name: run tests
+  #    run: npm run test
 
     - name: upload production
       uses: actions/upload-artifact@v2

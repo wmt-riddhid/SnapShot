@@ -21,12 +21,6 @@ pipeline{
             }
         }
 
-         stage('Test') {
-            steps {
-                sh './jenkins/scripts/test.sh'
-            }
-        }
-
         stage('Deliver'){
             steps{
                 sh 'npm install netlify-cli'

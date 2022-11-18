@@ -3,8 +3,8 @@ pipeline{
 
     tools {nodejs "node"}
     environment{
-        NETLIFY_AUTH_TOKEN = credentials('NETLIFY_AUTH_TOKEN_RD')
-        NETLIFY_SITE_ID = credentials('NETLIFY_SITE_ID_RD')
+        NETLIFY_AUTH_TOKEN = credentials('NETLIFY_AUTH_TOKEN')
+        NETLIFY_SITE_ID = credentials('NETLIFY_SITE_ID')
 
     }
     stages{
